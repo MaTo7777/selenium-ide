@@ -1,0 +1,135 @@
+{
+  "id": "2acb409c-2d98-4c88-91f6-0c1c36f54a0e",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "1a98ef46-eaa8-44f2-bf33-11c21510d807",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "960b80e7-0ab1-449e-af86-5dc76b95a265"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "960b80e7-0ab1-449e-af86-5dc76b95a265",
+      "name": "Test 1",
+      "commands": [
+        {
+          "id": "6189e8fb-3090-4557-88ae-06562cfcba0d",
+          "command": "open",
+          "target": "/",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "id=APjFqb",
+          "value": "jpetstore",
+          "id": "5770a7fa-0d45-493c-8f6b-55a5beaa9e94",
+          "fallbackTargets": [
+            [
+              "id=APjFqb",
+              "id"
+            ],
+            [
+              "name=q",
+              "name"
+            ],
+            [
+              "css=[data-ved=\"0ahUKEwjPo_SUo5aEAxXgRaQEHWJgDVIQ39UDCAQ\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#APjFqb",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@id='APjFqb'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "id=APjFqb",
+          "value": "${KEY_ENTER}",
+          "id": "0b8238dc-9462-4b85-8b6d-cb0f2b255c6e",
+          "fallbackTargets": [
+            [
+              "id=APjFqb",
+              "id"
+            ],
+            [
+              "name=q",
+              "name"
+            ],
+            [
+              "css=[data-ved=\"0ahUKEwjPpte2o5aEAxXQUaQEHSN8AMcQ39UDCAQ\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#APjFqb",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@id='APjFqb'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=#rso > .MjjYud:nth-child(1) .LC20lb",
+          "value": "",
+          "id": "8292a01d-94da-4c8d-9eb4-106b08f51152",
+          "fallbackTargets": [
+            [
+              "css=#rso > .MjjYud:nth-child(1) .LC20lb",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='rso']/div/div/div/div/div/div/span/a/h3)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h3[contains(.,'JPetStore - Petstore Demo - OctoPerf')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=#SidebarContent > a:nth-child(1) > img",
+          "value": "",
+          "id": "19902969-4155-4f32-877f-ab3ec5213018",
+          "fallbackTargets": [
+            [
+              "css=#SidebarContent > a:nth-child(1) > img",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='SidebarContent']/a/img)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
