@@ -1,0 +1,131 @@
+{
+  "id": "f74b87c9-f5b9-4ea1-8472-6deda4be8b67",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "0659c0fa-828a-4583-bf3e-abd0243e3634",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "42732ccb-c011-4e1f-a623-98c0af2ad41c"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "42732ccb-c011-4e1f-a623-98c0af2ad41c",
+      "name": "Test JPetStore 1",
+      "commands": [
+        {
+          "id": "12dff90c-3c8d-42c0-a57e-1a0cbd6eccf8",
+          "command": "open",
+          "target": "/",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "id=APjFqb",
+          "value": "https://petstore.octoperf.com/actions/Catalog.action",
+          "id": "9684375f-6777-4d58-be89-f2f04f215bab",
+          "fallbackTargets": [
+            [
+              "id=APjFqb",
+              "id"
+            ],
+            [
+              "name=q",
+              "name"
+            ],
+            [
+              "css=[data-ved=\"0ahUKEwjd3_Pzp5SEAxV9fKQEHQYtBZQQ39UDCAQ\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#APjFqb",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@id='APjFqb'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "id=APjFqb",
+          "value": "${KEY_ENTER}",
+          "id": "0f6ee2f2-1019-4697-b766-94a743636145",
+          "fallbackTargets": [
+            [
+              "id=APjFqb",
+              "id"
+            ],
+            [
+              "name=q",
+              "name"
+            ],
+            [
+              "css=[data-ved=\"0ahUKEwjd3_Pzp5SEAxV9fKQEHQYtBZQQ39UDCAQ\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#APjFqb",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@id='APjFqb'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=#rso > .MjjYud:nth-child(1) .LC20lb",
+          "value": "",
+          "id": "6480bdbf-00e9-41e9-84bd-7289c4f773db",
+          "fallbackTargets": [
+            [
+              "css=#rso > .MjjYud:nth-child(1) .LC20lb",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='rso']/div/div/div/div/div/div/span/a/h3)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h3[contains(.,'JPetStore - Petstore Demo - OctoPerf')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d7425439-791e-4226-ba88-50fefefce4a5",
+      "name": "Test JPetStore 2",
+      "commands": [
+        {
+          "id": "0ae4fa5d-c834-43c2-8652-7e0258c56f71",
+          "command": "open",
+          "target": "/",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
