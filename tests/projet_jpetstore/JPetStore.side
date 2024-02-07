@@ -22,7 +22,7 @@
   "tests": [
     {
       "id": "960b80e7-0ab1-449e-af86-5dc76b95a265",
-      "name": "Test 1",
+      "name": "Test Search Bar",
       "commands": [
         {
           "id": "6189e8fb-3090-4557-88ae-06562cfcba0d",
@@ -108,16 +108,709 @@
         },
         {
           "command": "click",
-          "target": "css=#SidebarContent > a:nth-child(1) > img",
+          "target": "name=keyword",
           "value": "",
-          "id": "19902969-4155-4f32-877f-ab3ec5213018",
-          "fallbackTargets": [
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "21db3b1c-4a97-401d-89f0-ddad266e93cc",
+          "targets": [
             [
-              "css=#SidebarContent > a:nth-child(1) > img",
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
               "css:finder"
             ],
             [
-              "xpath=(//div[@id='SidebarContent']/a/img)[1]",
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "snakes",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "cc1b57fd-d9d4-4fd2-81d0-21d2f316cc14",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9cbd479a-439c-4886-a2ce-ce88861cfd12",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=form",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6ebe0586-b287-4f82-a729-c90d5053b9bd",
+          "targets": [
+            [
+              "css=form",
+              "css:finder"
+            ],
+            [
+              "xpath=(//form[@action='/actions/Catalog.action'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "cat",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b6bd1920-afef-41d7-80f6-71ae00177b55",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "22fdbea0-1412-47b9-8783-e38977e5177e",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=form",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c3fbe61e-6e92-4609-b8df-65043f95452d",
+          "targets": [
+            [
+              "css=form",
+              "css:finder"
+            ],
+            [
+              "xpath=(//form[@action='/actions/Catalog.action'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "koi",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "142830f0-aa8a-4da1-8182-f9b3085fd52d",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "df7042c4-ec79-4397-bc91-3826c806fa82",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=keyword",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f1a7890a-f918-4b47-82ca-13bb0d0fd53d",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "dog",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "98fd9aa9-f960-49d8-aac6-71f9e81f6206",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "241308c4-9f69-4227-8148-16fe1b0a2ef9",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=keyword",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "171148e2-7f26-4d90-ba3d-9b2ec78c302a",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "turtle",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "5f361edb-8378-4c43-9894-7844d6853ec3",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6b99424e-5752-45ab-bf95-c1f461378aaa",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=form",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1c687053-5902-4b31-bddf-fecbe24b4eb6",
+          "targets": [
+            [
+              "css=form",
+              "css:finder"
+            ],
+            [
+              "xpath=(//form[@action='/actions/Catalog.action'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "bird",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "2d83dc48-bc38-4f95-b8e9-81e4ec048563",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "43122215-1cd3-47ee-a2dc-10e7efbcaf93",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=form",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "8c5386c0-c8f6-4021-a23a-5e7c4d89ce55",
+          "targets": [
+            [
+              "css=form",
+              "css:finder"
+            ],
+            [
+              "xpath=(//form[@action='/actions/Catalog.action'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "fish",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9e4aff5a-ee24-4bb5-b0c8-3f55f33dd1ef",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c18df919-629e-42e9-b765-96168fa0154a",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=keyword",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "587c00c4-d90a-4d46-8866-7e8186c73f92",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "persian",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "05985a3d-75d3-492f-93a6-6c6281d589a4",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e9109fab-0ae7-4ab9-b04e-2225d67b2a33",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=form",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6e966aaa-724d-4328-9f71-9580555c6db4",
+          "targets": [
+            [
+              "css=form",
+              "css:finder"
+            ],
+            [
+              "xpath=(//form[@action='/actions/Catalog.action'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "name=keyword",
+          "value": "iguana",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e9b13de7-8004-49d7-a9d3-68b1cc1997c2",
+          "targets": [
+            [
+              "name=keyword",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='keyword'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "name=searchProducts",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "a9c398f5-a7fd-4704-b48d-ea470d4f7c92",
+          "targets": [
+            [
+              "name=searchProducts",
+              "name"
+            ],
+            [
+              "css=form > input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='searchProducts'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='SearchContent']/form/input[2])[1]",
               "xpath:idRelative"
             ]
           ]
